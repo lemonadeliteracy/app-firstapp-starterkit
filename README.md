@@ -1,77 +1,153 @@
-# Build Your First App with AI — Starter Kit
+# Build Your First App with AI
 
-**Draft: the full setup has not yet been tested with learners.** This template prepares a Python workspace; it is not a finished app. You'll create your own copy, open it in GitHub Codespaces, and use an AI coding agent to help you build.
+### Build one app. Learn how to build the next.
 
-## What you'll need
+This starter kit gives you a place to begin building an app with AI.
 
-- A computer, internet access, and an eligible [GitHub account](https://github.com/).
-- GitHub Codespaces. Personal accounts include a monthly allowance; check [current limits and billing](https://docs.github.com/en/billing/concepts/product-billing/github-codespaces) before enabling paid usage.
-- Your own eligible account for **Codex** or **Claude Code**, with access to the IDE extension. Check current plan costs, limits, and terms.
+You'll create your own copy of the project, open it in an online workspace, and use an AI coding agent to help you build. You'll decide what the app should do, check what AI creates, and make changes as your idea develops.
 
-**Age and account rules:** GitHub requires users to be at least 13, or the applicable local minimum. [OpenAI's individual terms](https://openai.com/policies/terms-of-use) require users to be at least 13 or the applicable local minimum, with a parent or guardian's permission under 18; Codex IDE availability for teen accounts remains to be verified. [Anthropic's consumer terms](https://www.anthropic.com/legal/consumer-terms) require users to be at least 18, or older where local law requires. Do not share accounts or credentials to work around these rules. Check current terms before registering.
+You don't need coding experience. You also don't need to understand every term on this page before you begin.
 
-## 1. Create your own repository
+> **Draft:** The complete setup has not yet been tested with learners. Some instructions may change.
 
-The starter is the course's source template. Your copy is a **separate project under your account**; your changes do not change the original.
+## What you'll build
+
+You'll build a simple trivia app on a topic you choose. The app will ask a question, check an answer, and keep score.
+
+The starter kit is **not a finished app**. It gives you the workspace and tools you'll use to create one during the course.
+
+## Your four sessions
+
+| Session | Turning point | What you'll do |
+|---|---|---|
+| **1** | **Decide** | Choose what your app should do and begin building its first version. |
+| **2** | **Connect** | Connect your app to a public information source. |
+| **3** | **Check** | Test the results, identify problems, and direct AI to fix them. |
+| **4** | **Shape** | Customize your app and check that your changes work. |
+
+Each session is planned to be recorded and shared afterward. **Dates, times, and session length are to be confirmed.**
+
+## Before you begin
+
+You'll need:
+
+- A computer and an internet connection.
+- An eligible [GitHub account](https://github.com/).
+- Access to GitHub Codespaces, the online workspace used for the course.
+- An eligible account for either **Codex** or **Claude Code**, with access to its coding extension.
+
+Some services have usage limits or costs. Review the current terms before subscribing or adding payment information:
+
+- [GitHub Codespaces billing](https://docs.github.com/en/billing/concepts/product-billing/github-codespaces)
+- [Codex pricing](https://developers.openai.com/codex/pricing)
+- [Claude Code setup](https://code.claude.com/docs/en/vs-code)
+
+### A note about age and accounts
+
+Each service has its own age and consent rules. Check the current terms before creating an account.
+
+GitHub requires users to be at least 13, or the applicable local minimum. [OpenAI's individual terms](https://openai.com/policies/terms-of-use) require users under 18 to have a parent or guardian's permission; access to the Codex IDE extension for teen accounts still needs to be verified. [Anthropic's consumer terms](https://www.anthropic.com/legal/consumer-terms) require users to be at least 18, or older where local law requires.
+
+Use your own eligible account. Don't share credentials or create an account with a false age.
+
+## Set up your building space
+
+Try these steps before the first session. If you get stuck, note where you stopped and ask the course organizer for help.
+
+### 1. Create your own repository
+
+A **repository**, or *repo*, is where your project files and their saved history live.
 
 1. Open the [starter template](https://github.com/lemonadeliteracy/app-firstapp-starterkit).
 2. Select **Use this template → Create a new repository**.
-3. Choose your own account as owner and give the repository a name, such as `my-first-app`.
-4. Select **Private**, then **Create repository**.
-5. Confirm that the new repository belongs to your account and contains the starter files.
+3. Choose your own GitHub account as the owner.
+4. Give your repository a name, such as `my-first-app`.
+5. Select **Private**, then **Create repository**.
 
-A private repository is not a secret vault. Never put passwords, tokens, API keys, personal information, confidential information, or client details in project files or prompts.
+You now have your own copy. Changes you make to it won't change the course starter.
 
-## 2. Open your repository in Codespaces
+### 2. Open your repository in Codespaces
 
-1. On **your new repository**, select **Code → Codespaces**.
+A **Codespace** is an online workspace where you can work on your project.
+
+1. On your new repository page, select **Code → Codespaces**.
 2. Select **Create codespace on main**, or the equivalent create button.
-3. Wait for the browser-based editor to open and the environment build and dependency installation to finish.
+3. Wait for the editor to open and the environment to finish setting up.
 4. Open **Explorer** and check that you can see your project files.
 
-The configuration uses Python 3.12 and installs [Streamlit](https://streamlit.io/) for the app interface and [Requests](https://requests.readthedocs.io/) for public data connections. It forwards port 8501 for an app you build later. There is no app in the starter yet.
+### 3. Connect an AI coding agent
 
-If you need to return later, open [your Codespaces](https://github.com/codespaces) and reopen the existing one. Stop it there when you're finished; closing the browser tab may not stop it immediately. Files in a Codespace are **not automatically committed and pushed** to GitHub—review and save changes using Source Control during the course.
+An **AI coding agent** can help you understand and change project files. Choose either Codex or Claude Code, subject to the account rules above.
 
-## 3. Connect an AI coding agent
+1. Open **Extensions** in your Codespace.
+2. Search for your chosen extension:
+   - [**Codex** by OpenAI](https://marketplace.visualstudio.com/items?itemName=openai.chatgpt) — `openai.chatgpt`
+   - [**Claude Code** by Anthropic](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code) — `anthropic.claude-code`
+3. Install the extension in the Codespace if it is available.
+4. Open its panel and sign in with your own eligible account.
 
-Choose one option. The extension and its account are separate: installing an extension doesn't create or pay for an account.
+**Important:** These extension steps have not yet been tested in the course's browser-based Codespace. If an extension doesn't install or start, ask the organizer for help. Don't disable security settings or share credentials to get around the problem.
 
-1. In the Codespace editor, open **Extensions**.
-2. Find and install one of these official extensions in the Codespace:
-   - **Codex**, published by OpenAI — identifier `openai.chatgpt`. See the [Codex IDE guide](https://learn.chatgpt.com/docs/codex/ide) and [pricing](https://developers.openai.com/codex/pricing).
-   - **Claude Code**, published by Anthropic — identifier `anthropic.claude-code`. See the [Claude Code VS Code guide](https://code.claude.com/docs/en/vs-code). Anthropic documents an eligible paid Claude subscription or Claude Console account for the extension.
-3. Open the agent's panel and follow its sign-in instructions using your **own eligible account**. If an icon isn't visible, open the Command Palette and search for the agent.
+### 4. Ask your first question
 
-**Not yet verified:** installation, sign-in and operation of either extension in this starter's browser-based Codespace. If an extension doesn't install or start, ask the organizer for help. Do not enable privileged containers, disable security controls, or share credentials to bypass the problem.
+Once the agent is open in your project, try:
 
-## 4. Ask your first question
+> I'm learning to build my first app. Explain only the tracked starter files `README.md`, `requirements.txt`, `.gitignore`, and `.devcontainer/devcontainer.json` in beginner-friendly language. Don't read secrets, credentials, environment files, or untracked files. Don't change or run anything.
 
-Once your agent is open in your project, try:
+Compare the answer with the files you can see. If the agent asks to change files or run a command, decline for now.
 
-> I'm learning to build my first app. Explain only the tracked starter files `README.md`, `requirements.txt`, `.gitignore`, and `.devcontainer/devcontainer.json` in beginner-friendly language. Do not read secrets, credentials, environment files, or untracked files. Do not change or run anything.
+### 5. Explore more questions (optional)
 
-Compare the answer with the files in Explorer. If the agent asks to change files or run commands, decline for this exercise. Its answer may be incomplete or wrong; check what it says.
+Looking for a head start? We'll cover these topics during the sessions, but you can explore them with your coding agent before the first session. You don't need to do this to be ready.
 
-## Ready for Saturday?
+If you're curious, ask one question at a time:
+
+- **Python:** "What is Python, and what role will it play in my app? Explain it for a beginner."
+- **Streamlit:** "What is Streamlit? Explain how it turns Python code into something I can see in a browser."
+- **Git and GitHub:** "What is the difference between Git and GitHub? Use an analogy, then explain how each relates to this project."
+- **Repositories:** "What is a repository, and how is my copy different from the course starter?"
+- **Saving work:** "Explain commit, push, and pull using a simple example. Don't make any changes."
+- **APIs:** "What is an API? Explain how an app might use one to get trivia information."
+
+After an answer, you can ask:
+
+> Give me a short example and one question I can use to check my understanding.
+
+Compare the answers with the course instructions and ask follow-up questions. For this exploration, ask the agent not to run commands or change files. Don't approve a command or change unless you understand and want it.
+
+## Are you ready?
+
+Before the first session, check:
 
 - [ ] I created my own private repository from the starter.
-- [ ] I can open that repository in a Codespace and see its files.
-- [ ] I checked account eligibility, age rules, and costs for my chosen agent.
-- [ ] My agent can describe the starter files without changing them.
-- [ ] I know how to stop and reopen my Codespace.
-- [ ] I know not to put personal or confidential information, passwords, tokens, or keys in prompts or files.
+- [ ] I can open the repository in a Codespace and see its files.
+- [ ] I checked the account rules and costs for my chosen agent.
+- [ ] My agent can describe the starter files.
+- [ ] I know how to ask for help if I get stuck.
 
-If you get stuck, note the step and ask the course organizer for help. Don't send sign-in codes, credentials, personal details, or screenshots containing them.
+You can find and reopen your workspace at [github.com/codespaces](https://github.com/codespaces). Stop it there when you're finished; closing your browser tab may not stop it immediately.
 
-## Later: run your app
+## Keep your information private
 
-When the course has helped you create an `app.py` file, run `python -m streamlit run app.py` in the Codespace terminal. Before opening or sharing a preview, check that its port is marked **Private** in the Ports tab.
+Use only public or made-up information in your project.
 
-`.gitignore` excludes some common secret files, but it cannot catch every credential and does not stop an agent from reading files. Review what you share and commit.
+**Never enter personal, confidential, or client information, passwords, API keys, or tokens into prompts or project files.**
 
-## References
+A private repository is not a place to store secrets. The included `.gitignore` file excludes some common secret files, but it cannot catch everything or prevent an AI agent from reading a file.
 
-- [Create a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
-- [Create a Codespace for a repository](https://docs.github.com/en/codespaces/developing-in-a-codespace/creating-a-codespace-for-a-repository)
-- [GitHub Terms of Service](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service)
+## Get familiar with the language
+
+This glossary is optional. You don't need to memorize it—come back whenever you encounter an unfamiliar term.
+
+| Term | What it means |
+|---|---|
+| **GitHub** | Where your project repository lives. |
+| **Repository / repo** | Your project's files and their saved history. |
+| **Template** | A starting set of files you copy into your own repository. |
+| **Codespace** | An online workspace for working on your project. |
+| **AI coding agent** | An AI tool that can help you understand and change project files. |
+| **Commit** | A saved checkpoint of changes in Git. |
+| **Push** | Send committed changes from your workspace to GitHub. |
+| **Pull** | Bring changes from GitHub into your workspace. |
+
+Files in your Codespace are **not automatically committed and pushed** to GitHub. We'll practise saving your work during the course.
