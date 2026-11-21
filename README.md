@@ -115,6 +115,16 @@ After an answer, you can ask:
 
 Compare the answers with the course instructions and ask follow-up questions. For this exploration, ask the agent not to run commands or change files. Don't approve a command or change unless you understand and want it.
 
+### Local and cloud: where does your app run?
+
+An app can run **locally**, on your own computer, or in the **cloud**, on a computer accessed over the internet. In this course, your Codespace is a cloud workspace: you use it through your browser to build and run your app.
+
+Running an app in your Codespace lets you preview it while you work. **Hosting** is making an app available for people to access, often using a separate cloud service. A Codespace preview is not the same as publishing an app for everyone.
+
+If you're curious, ask your agent:
+
+> What's the difference between running an app locally, running it in my Codespace, and hosting it online? Explain it for a beginner. Don't run commands or change files.
+
 ## Are you ready?
 
 Before the first session, check:
