@@ -54,7 +54,18 @@ Use your own eligible account. Don't share credentials or create an account with
 
 Try these steps before the first session. If you get stuck, note where you stopped and ask the course organizer for help.
 
-### 1. Create your own repository
+### 1. Set up a GitHub account
+
+If you already have your own eligible GitHub account, you can skip to the next step.
+
+1. Go to [GitHub](https://github.com/) and select **Sign up**.
+2. Follow the prompts to create your account and verify your email address.
+3. Choose a strong password and keep it private. Don't share your password or verification codes with anyone, including the course organizer or your AI agent.
+4. Sign in to GitHub.
+
+Check the age and account rules above before signing up. If you need a parent or guardian's help, ask them before creating your account. For help with account security, see [GitHub's guide to securing your account](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/securing-your-account).
+
+### 2. Create your own repository
 
 A **repository**, or *repo*, is where your project files and their saved history live.
 
@@ -66,7 +77,7 @@ A **repository**, or *repo*, is where your project files and their saved history
 
 You now have your own copy. Changes you make to it won't change the course starter.
 
-### 2. Open your repository in Codespaces
+### 3. Open your repository in Codespaces
 
 A **Codespace** is an online workspace where you can work on your project.
 
@@ -75,7 +86,7 @@ A **Codespace** is an online workspace where you can work on your project.
 3. Wait for the editor to open and the environment to finish setting up.
 4. Open **Explorer** and check that you can see your project files.
 
-### 3. Connect an AI coding agent
+### 4. Connect an AI coding agent
 
 An **AI coding agent** can help you understand and change project files. Choose either Codex or Claude Code, subject to the account rules above.
 
@@ -88,7 +99,7 @@ An **AI coding agent** can help you understand and change project files. Choose 
 
 **Important:** These extension steps have not yet been tested in the course's browser-based Codespace. If an extension doesn't install or start, ask the organizer for help. Don't disable security settings or share credentials to get around the problem.
 
-### 4. Ask your first question
+### 5. Ask your first question
 
 Once the agent is open in your project, try:
 
@@ -96,7 +107,7 @@ Once the agent is open in your project, try:
 
 Compare the answer with the files you can see. If the agent asks to change files or run a command, decline for now.
 
-### 5. Explore more questions (optional)
+### 6. Explore more questions (optional)
 
 Looking for a head start? We'll cover these topics during the sessions, but you can explore them with your coding agent before the first session. You don't need to do this to be ready.
 
@@ -125,6 +136,23 @@ If you're curious, ask your agent:
 
 > What's the difference between running an app locally, running it in my Codespace, and hosting it online? Explain it for a beginner. Don't run commands or change files.
 
+## Get familiar with the language
+
+This glossary is optional. You don't need to memorize it—come back whenever you encounter an unfamiliar term.
+
+| Term | What it means |
+|---|---|
+| **GitHub** | Where your project repository lives. |
+| **Repository / repo** | Your project's files and their saved history. |
+| **Template** | A starting set of files you copy into your own repository. |
+| **Codespace** | An online workspace for working on your project. |
+| **AI coding agent** | An AI tool that can help you understand and change project files. |
+| **Commit** | A saved checkpoint of changes in Git. |
+| **Push** | Send committed changes from your workspace to GitHub. |
+| **Pull** | Bring changes from GitHub into your workspace. |
+
+Files in your Codespace are **not automatically committed and pushed** to GitHub. We'll practise saving your work during the course.
+
 ## Are you ready?
 
 Before the first session, check:
@@ -144,20 +172,3 @@ Use only public or made-up information in your project.
 **Never enter personal, confidential, or client information, passwords, API keys, or tokens into prompts or project files.**
 
 A private repository is not a place to store secrets. The included `.gitignore` file excludes some common secret files, but it cannot catch everything or prevent an AI agent from reading a file.
-
-## Get familiar with the language
-
-This glossary is optional. You don't need to memorize it—come back whenever you encounter an unfamiliar term.
-
-| Term | What it means |
-|---|---|
-| **GitHub** | Where your project repository lives. |
-| **Repository / repo** | Your project's files and their saved history. |
-| **Template** | A starting set of files you copy into your own repository. |
-| **Codespace** | An online workspace for working on your project. |
-| **AI coding agent** | An AI tool that can help you understand and change project files. |
-| **Commit** | A saved checkpoint of changes in Git. |
-| **Push** | Send committed changes from your workspace to GitHub. |
-| **Pull** | Bring changes from GitHub into your workspace. |
-
-Files in your Codespace are **not automatically committed and pushed** to GitHub. We'll practise saving your work during the course.
