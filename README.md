@@ -8,8 +8,6 @@ You'll create your own copy of the project, open it in an online workspace, and 
 
 You don't need coding experience. You also don't need to understand every term on this page before you begin.
 
-> **Draft:** The complete setup has not yet been tested with learners. Some instructions may change.
-
 ## What you'll build
 
 You'll build a simple trivia app on a topic you choose. The app will ask a question, check an answer, and keep score.
@@ -75,6 +73,10 @@ A **repository**, or *repo*, is where your project files and their saved history
 4. Give your repository a name, such as `my-first-app`.
 5. Select **Private**, then **Create repository**.
 
+[![GitHub page for the starter template, with the Use this template button highlighted](images/create-your-repository.jpg)](https://v.lawyerxlabs.com/guides/UPluCrNBsNEhMfpo3mtf?view=interactive)
+
+Want a guided walkthrough? Select the image above to open it.
+
 You now have your own copy. Changes you make to it won't change the course starter.
 
 ### 3. Open your repository in Codespaces
@@ -98,6 +100,12 @@ An **AI coding agent** can help you understand and change project files. Choose 
 4. Open its panel and sign in with your own eligible account.
 
 **Important:** These extension steps have not yet been tested in the course's browser-based Codespace. If an extension doesn't install or start, ask the organizer for help. Don't disable security settings or share credentials to get around the problem.
+
+### Don't have a coding agent? Try OpenCode (optional)
+
+[OpenCode](https://opencode.ai/) is a free, open-source tool for working with AI coding agents. You can find its [OpenCode extension in the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=sst-dev.opencode). It may still require an account with an AI model provider, and that provider may have its own costs and account rules.
+
+OpenCode is another option, not a requirement for the course. Install it in your Codespace only if it is available there. Never put an API key, token, password, or other credential in your repository or a project file.
 
 ### 5. Ask your first question
 
@@ -172,3 +180,9 @@ Use only public or made-up information in your project.
 **Never enter personal, confidential, or client information, passwords, API keys, or tokens into prompts or project files.**
 
 A private repository is not a place to store secrets. The included `.gitignore` file excludes some common secret files, but it cannot catch everything or prevent an AI agent from reading a file.
+
+### Work safely with your coding agent
+
+Before you approve an agent's request to run a command or change files, read what it plans to do. Ask questions if you don't understand it. You can say no, ask it to explain, or ask it to make a smaller change.
+
+Don't disable security settings or copy credentials into the project to make a tool work. If a setup step asks for that, stop and ask the organizer for help.
